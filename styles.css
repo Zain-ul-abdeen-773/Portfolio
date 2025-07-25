@@ -445,7 +445,6 @@ body {
     40% { transform: translateY(-20px) translateX(-50%); }
     60% { transform: translateY(-10px) translateX(-50%); }
 }
-
 /* ===== ABOUT SECTION ===== */
 .about-content {
     display: flex;
@@ -496,15 +495,19 @@ body {
 }
 
 .hexagon-inner img {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    transition: var(--transition);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                /* Fill entire hexagon */
+    object-position: center top;      /* Move image upward to show forehead */
+    transition: none;
 }
 
+
+/* Remove hover animation */
 .hexagon:hover .hexagon-inner img {
-    transform: scale(1.1);
+    transform: none;
 }
+
 
 .about-text {
     flex: 1;
