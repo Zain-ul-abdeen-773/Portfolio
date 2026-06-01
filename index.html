@@ -47,7 +47,6 @@
             <div class="typewriter-text">> INIT_PROTOCOL: AI Data Pipeline Engineer...</div>
             <div class="hero-stats">
                 <div class="stat-chip">CGPA: 3.62</div>
-                <div class="stat-chip">CREDITS: <span class="data-value" data-target="85">0</span></div>
                 <div class="stat-chip">STUDENT @ GIKI</div>
             </div>
             <div style="margin-top: 3rem;">
@@ -119,84 +118,169 @@
         
         <h3 style="margin: 2rem 0 1rem; color: var(--text-secondary);">> ACTIVE EXPERIMENTS [AI/ML]</h3>
         <div class="grid">
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
+                <div class="bracket-accent"></div>
+                <h3 style="color:var(--primary);margin-bottom:0.5rem">Generative Fashion Designer</h3>
+                <p style="font-size:0.9rem;margin-bottom:1rem">AI-powered textile pattern generation suite using VAE, GANs (DC, WGAN-GP, cGAN), Latent DiT, and Flux API with a React frontend dashboard.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">PyTorch</span><span class="tech-tag">Flask</span><span class="tech-tag">React</span><span class="tech-tag">Docker</span>
+                </div>
+                <div class="project-hover-details">
+                    <h4>Generative Fashion Designer</h4>
+                    <p>A specialized generative suite for fashion designers featuring 6 locally-trained models and Flux API integration. Includes a complete data pipeline (DTD, 5,640 images, 47 classes), quantitative evaluation (FID, IS, SSIM), containerized REST API, and CI/CD via GitHub Actions.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">VAE</span><span class="hover-tag">DCGAN</span><span class="hover-tag">WGAN-GP</span><span class="hover-tag">cGAN</span><span class="hover-tag">Latent DiT</span><span class="hover-tag">Flux API</span><span class="hover-tag">TensorBoard</span><span class="hover-tag">MLOps</span>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">EconML</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">Financial ML platform covering 26 models across 8 tickers. Regression, BiLSTM forecasting, KMeans, and SMOTE-based fraud detection.</p>
                 <div class="project-tech">
                     <span class="tech-tag">FastAPI</span><span class="tech-tag">XGBoost</span><span class="tech-tag">Docker</span>
                 </div>
+                <div class="project-hover-details">
+                    <h4>EconML Platform</h4>
+                    <p>End-to-end financial machine learning platform with 26 trained models across 8 stock tickers. Covers regression analysis, BiLSTM time-series forecasting, KMeans clustering, and SMOTE-based credit card fraud detection with containerized deployment.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">FastAPI</span><span class="hover-tag">XGBoost</span><span class="hover-tag">BiLSTM</span><span class="hover-tag">Docker</span><span class="hover-tag">KMeans</span><span class="hover-tag">SMOTE</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">The AI Scientist</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">Agentic Research Assistant taking hypothesis, running ArXiv/Semantic Scholar QC, then generating operationally-grounded experiment plans.</p>
                 <div class="project-tech">
                     <span class="tech-tag">LLaMA 3.3 70B</span><span class="tech-tag">LangChain RAG</span>
                 </div>
+                <div class="project-hover-details">
+                    <h4>The AI Scientist</h4>
+                    <p>An agentic research assistant that accepts a hypothesis, runs quality-controlled searches via ArXiv and Semantic Scholar APIs, performs literature synthesis, and generates operationally-grounded experiment plans with full citation support.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">LLaMA 3.3 70B</span><span class="hover-tag">LangChain</span><span class="hover-tag">RAG</span><span class="hover-tag">ArXiv API</span><span class="hover-tag">Agents</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">Agentic Multimodal RAG</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">Pipeline combining CLIP (embeddings), FAISS (search), Neo4j (graph), LangChain ReAct agent, and BLIP-2/LLaVA (visual QA).</p>
                 <div class="project-tech">
                     <span class="tech-tag">CLIP</span><span class="tech-tag">FAISS</span><span class="tech-tag">Neo4j</span>
                 </div>
+                <div class="project-hover-details">
+                    <h4>Agentic Multimodal RAG</h4>
+                    <p>A multimodal retrieval-augmented generation pipeline combining CLIP embeddings, FAISS vector search, Neo4j knowledge graphs, LangChain ReAct agents, and BLIP-2/LLaVA for visual question answering over complex document collections.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">CLIP</span><span class="hover-tag">FAISS</span><span class="hover-tag">Neo4j</span><span class="hover-tag">LangChain</span><span class="hover-tag">BLIP-2</span><span class="hover-tag">LLaVA</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <h3 style="margin: 3rem 0 1rem; color: var(--text-secondary);">> INFRASTRUCTURE [DEVOPS]</h3>
         <div class="grid">
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">DOMjudge Deploy</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">Automated deployment of DOMjudge using Bash and Docker Compose. CLI-driven control & judgehost scaling.</p>
                 <div class="project-tech"><span class="tech-tag">Bash</span><span class="tech-tag">Docker Compose</span></div>
+                <div class="project-hover-details">
+                    <h4>DOMjudge Deploy</h4>
+                    <p>A fully automated deployment solution for the DOMjudge competitive programming judge system. Features CLI-driven control, dynamic judgehost scaling, and one-command setup with Docker Compose orchestration.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">Bash</span><span class="hover-tag">Docker Compose</span><span class="hover-tag">CLI</span><span class="hover-tag">Automation</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">AWS Auto CI/CD</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">GitHub Actions logic connecting React, Node.js, and DB to AWS EC2 via ECR (Staging/Testing envs).</p>
                 <div class="project-tech"><span class="tech-tag">GitHub Actions</span><span class="tech-tag">AWS EC2/ECR</span></div>
+                <div class="project-hover-details">
+                    <h4>AWS Auto CI/CD</h4>
+                    <p>End-to-end CI/CD pipeline using GitHub Actions to build, test, and deploy a full-stack app (React + Node.js + DB) to AWS EC2 via ECR. Supports isolated staging and testing environments with automated rollback.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">GitHub Actions</span><span class="hover-tag">AWS EC2</span><span class="hover-tag">ECR</span><span class="hover-tag">Terraform</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <h3 style="margin: 3rem 0 1rem; color: var(--text-secondary);">> ARCHIVE LOGS [PREVIOUS]</h3>
         <div class="grid">
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <img src="Screenshot 2025-07-14 180427.png" alt="Bite n Byte" class="project-img">
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">Bite n Byte</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">An AI-powered dining revolution blending smart automation with seamless restaurant management.</p>
                 <div class="project-tech"><span class="tech-tag">Flask</span><span class="tech-tag">MongoDB</span></div>
+                <div class="project-hover-details">
+                    <h4>Bite n Byte</h4>
+                    <p>An AI-powered smart restaurant management system featuring automated ordering, real-time kitchen management, intelligent menu recommendations, and seamless payment integration. Built with Flask backend and MongoDB for scalable data persistence.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">Flask</span><span class="hover-tag">MongoDB</span><span class="hover-tag">AI</span><span class="hover-tag">Automation</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <img src="Screenshot 2025-07-14 182122.png" alt="Edumate" class="project-img">
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">AI Learning App</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">EduMate is an AI-driven web app that helps students study smarter by summarizing notes & planning.</p>
                 <div class="project-tech"><span class="tech-tag">Gemini</span><span class="tech-tag">Flask</span></div>
+                <div class="project-hover-details">
+                    <h4>EduMate - AI Learning App</h4>
+                    <p>An AI-driven educational web application powered by Google Gemini. Helps students study smarter through automated note summarization, intelligent study planning, flashcard generation, and personalized learning paths.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">Gemini API</span><span class="hover-tag">Flask</span><span class="hover-tag">NLP</span><span class="hover-tag">Education</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <img src="Screenshot 2025-07-14 185025.png" alt="Bank" class="project-img">
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">Bank System</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">Standard banking operations via a C++ OOP architecture.</p>
                 <div class="project-tech"><span class="tech-tag">C++</span><span class="tech-tag">OOP</span></div>
+                <div class="project-hover-details">
+                    <h4>Bank Management System</h4>
+                    <p>A comprehensive banking system implementing core operations — account creation, deposits, withdrawals, transfers, and statement generation — using clean C++ OOP architecture with inheritance, polymorphism, and file-based persistence.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">C++</span><span class="hover-tag">OOP</span><span class="hover-tag">File I/O</span><span class="hover-tag">Data Structures</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <img src="Screenshot 2025-07-15 032406.png" alt="Race" class="project-img">
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">DSA Race Car</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">C++ console-based 2D race car game with lane logic and custom algorithms.</p>
                 <div class="project-tech"><span class="tech-tag">C++</span><span class="tech-tag">DSA</span></div>
+                <div class="project-hover-details">
+                    <h4>DSA Race Car Game</h4>
+                    <p>A console-based 2D racing game built in C++ featuring real-time lane-switching mechanics, obstacle avoidance algorithms, dynamic difficulty scaling, and score tracking — all implemented using custom data structures and algorithms.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">C++</span><span class="hover-tag">DSA</span><span class="hover-tag">Game Logic</span><span class="hover-tag">Console UI</span>
+                    </div>
+                </div>
             </div>
-            <div class="glass-panel anim-fade-up">
+            <div class="glass-panel project-card anim-fade-up">
                 <div class="bracket-accent"></div>
                 <img src="Screenshot 2025-07-15 033130.png" alt="Recognition" class="project-img">
                 <h3 style="color:var(--primary);margin-bottom:0.5rem">Character Recognition</h3>
                 <p style="font-size:0.9rem;margin-bottom:1rem">Flask-based deep learning web app that recognizes handwritten characters (CNN via EMNIST).</p>
                 <div class="project-tech"><span class="tech-tag">TensorFlow</span><span class="tech-tag">CNN</span></div>
+                <div class="project-hover-details">
+                    <h4>Handwritten Character Recognition</h4>
+                    <p>A deep learning web application using a Convolutional Neural Network trained on the EMNIST dataset. Users draw characters on a canvas and get real-time predictions. Deployed as a Flask web app with interactive frontend.</p>
+                    <div class="hover-meta">
+                        <span class="hover-tag">TensorFlow</span><span class="hover-tag">CNN</span><span class="hover-tag">EMNIST</span><span class="hover-tag">Flask</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

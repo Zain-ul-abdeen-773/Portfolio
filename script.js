@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Perspective Tilt on Hover for Glass Panels
-    const panels = document.querySelectorAll('.glass-panel');
+    // 1. Perspective Tilt on Hover for Glass Panels (skip project cards — they use hover overlay)
+    const panels = document.querySelectorAll('.glass-panel:not(.project-card)');
     
     panels.forEach(panel => {
         panel.addEventListener('mousemove', (e) => {
