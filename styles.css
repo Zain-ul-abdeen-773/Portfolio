@@ -269,8 +269,8 @@ ul {
 }
 
 .hero-avatar {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto 2rem auto;
   border-radius: 50%;
   padding: 4px;
@@ -295,13 +295,13 @@ ul {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 15%;
   display: block;
-  filter: grayscale(20%) contrast(1.1);
-  transition: filter 0.4s ease;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .hero-avatar:hover .avatar-img {
-  filter: grayscale(0%) contrast(1.05) brightness(1.05);
+  transform: scale(1.05);
 }
 
 @keyframes avatarGlow {
