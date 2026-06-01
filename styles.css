@@ -268,6 +268,52 @@ ul {
   text-align: center;
 }
 
+.hero-avatar {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 2rem auto;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--primary), var(--accent), var(--primary));
+  background-size: 300% 300%;
+  animation: avatarGlow 4s ease-in-out infinite;
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3), 0 0 60px rgba(123, 47, 247, 0.15);
+  position: relative;
+}
+
+.hero-avatar::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(20%) contrast(1.1);
+  transition: filter 0.4s ease;
+}
+
+.hero-avatar:hover .avatar-img {
+  filter: grayscale(0%) contrast(1.05) brightness(1.05);
+}
+
+@keyframes avatarGlow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes pulse-ring {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.08); opacity: 0.2; }
+}
+
 .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
