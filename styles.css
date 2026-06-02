@@ -494,6 +494,9 @@ ul {
   position: relative;
   overflow: hidden;
   cursor: default;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-hover-details {
@@ -511,10 +514,10 @@ ul {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 2px solid var(--primary);
-  padding: 1.8rem 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.8rem;
   transform: translateY(100%);
   opacity: 0;
@@ -522,6 +525,7 @@ ul {
               opacity 0.35s ease;
   z-index: 10;
   box-shadow: 0 -8px 30px rgba(0, 212, 255, 0.08);
+  overflow-y: auto;
 }
 
 .project-card:hover .project-hover-details {
