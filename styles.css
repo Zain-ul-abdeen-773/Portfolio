@@ -126,6 +126,20 @@ ul {
   -webkit-text-fill-color: transparent;
   display: inline-block;
   text-shadow: 0 0 20px var(--border-glow);
+  position: relative;
+}
+
+.glitch-text:hover {
+  animation: textGlitch 0.2s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+@keyframes textGlitch {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 1px) }
+  40% { transform: translate(-1px, -1px) }
+  60% { transform: translate(2px, 1px) }
+  80% { transform: translate(1px, -1px) }
+  100% { transform: translate(0) }
 }
 
 /* ================= UI COMPONENTS ================= */
