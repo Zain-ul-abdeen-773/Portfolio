@@ -67,4 +67,44 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('loaded');
     }, 200);
 
+    // 4. Custom Cursor & Spotlight Logic
+    const cursor = document.getElementById('custom-cursor');
+    const trail = document.getElementById('custom-cursor-trail');
+    
+    if (cursor && trail) {
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+            
+            trail.style.left = `${e.clientX}px`;
+            trail.style.top = `${e.clientY}px`;
+        });
+
+        document.querySelectorAll('a, .btn').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                cursor.style.background = 'var(--accent)';
+                cursor.style.boxShadow = '0 0 10px var(--accent), 0 0 20px var(--accent)';
+                trail.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                trail.style.borderColor = 'var(--accent)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursor.style.background = 'var(--primary)';
+                cursor.style.boxShadow = '0 0 10px var(--primary), 0 0 20px var(--primary)';
+                trail.style.transform = 'translate(-50%, -50%) scale(1)';
+                trail.style.borderColor = 'rgba(0, 212, 255, 0.4)';
+            });
+        });
+    }
+
+    // Interactive mouse spotlight on glass panels
+    document.querySelectorAll('.glass-panel').forEach(panel => {
+        panel.addEventListener('mousemove', (e) => {
+            const rect = panel.getBoundingClientRect();
+            panel.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+            panel.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+        });
+    });
+
 });
