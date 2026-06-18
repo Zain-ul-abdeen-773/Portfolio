@@ -499,6 +499,10 @@ ul {
   flex-direction: column;
 }
 
+.cert-card {
+  min-height: 280px;
+}
+
 .project-hover-details {
   position: absolute;
   bottom: 0;
